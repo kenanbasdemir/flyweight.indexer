@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight.Indexer", "Flyweight.Indexer\Flyweight.Indexer.csproj", "{FECEBE80-AF0D-4596-9600-C6E825AB0694}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FECEBE80-AF0D-4596-9600-C6E825AB0694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECEBE80-AF0D-4596-9600-C6E825AB0694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECEBE80-AF0D-4596-9600-C6E825AB0694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECEBE80-AF0D-4596-9600-C6E825AB0694}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D66E43A-18FC-4BB7-A872-1325F280141E}
+	EndGlobalSection
+EndGlobal
