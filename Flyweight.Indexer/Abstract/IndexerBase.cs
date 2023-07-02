@@ -1,23 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Flyweight.Indexer.Abstract
+namespace Flyweight.Indexer.Abstract;
+
+public abstract class IndexerBase<T> where T : class, new()
 {
-    public abstract class IndexerBase<T> where T : class, new()
-    {
-        private Dictionary<string, T> indexers = new Dictionary<string, T>();
+    private Dictionary<string, T> indexers = new Dictionary<string, T>();
 
-        public T this[string indexer]
+    public T this[string indexer]
+    {
+        get
         {
-            get
+            if (!indexers.ContainsKey(indexer))
             {
-                if (!indexers.ContainsKey(indexer))
-                {
-                    indexers.Add(indexer, new T());
-                }
-                return indexers[indexer];
+                indexers.Add(indexer, new T());
             }
+            return indexers[indexer];
         }
     }
+
+    public void Remove(string key) => indexers.Remove(key);
 }

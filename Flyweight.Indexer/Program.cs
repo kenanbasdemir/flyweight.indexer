@@ -1,17 +1,10 @@
-﻿using Flyweight.Indexer.Implementation;
-using System;
+﻿using System;
+using Flyweight.Indexer.Implementation;
 
-namespace Flyweight.Indexer
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Keyboard keyboardKey = new Keyboard();
-            keyboardKey["k"].KeyValue = "K";
-            keyboardKey["e"].KeyValue = "E";
+Keyboard keyboard = new Keyboard();
+keyboard["k"].Value = "K";
+keyboard["e"].Value = "E";
 
-            Console.WriteLine(keyboardKey["k"].KeyValue);
-        }
-    }
-}
+Console.WriteLine(keyboard["k"].Value);
+
+keyboard.Remove("k");

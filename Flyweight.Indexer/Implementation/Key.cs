@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace Flyweight.Indexer.Implementation;
 
-namespace Flyweight.Indexer.Implementation
+public class Key
 {
-    public class Key
-    {
-        public string KeyValue { get; set; }
-    }
+    public string Value { get; set; }
 }
