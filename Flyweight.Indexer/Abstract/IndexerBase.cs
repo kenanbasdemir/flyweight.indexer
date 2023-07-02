@@ -19,4 +19,6 @@ public abstract class IndexerBase<T> where T : class, new()
     }
 
     public void Remove(string key) => indexers.Remove(key);
+
+    public IReadOnlyDictionary<string, T> ToDictionary() => indexers.AsReadOnly();
 }
